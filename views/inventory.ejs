@@ -1,0 +1,26 @@
+<%include partial/header%>
+<h1>Inventory page!</h1>
+<p>welcome to Newark_IT</p>
+
+<% products.forEach(function(product){ %>
+  <div class="">
+    <h4><%=product.PName%></h4>
+    <p><%=product.Description%></p>
+    <p>left:<%=product.PQuantity%>
+        PID:<%= product.PID %></p>
+      <p> price:<%=product.PPRice%></p>
+
+  </div>
+<%});%>
+
+<form class="" action="/order" method="post">
+<label for="">Product ID:</label>
+  <input type="text" name="pid" value="">
+<label for="">Quantity:</label>
+    <input type="text" name="quantity" value="">
+<button type="submit" name="button">buy it!</button>
+</form>
+
+
+<a href="/">this is home page</a>
+<%include partial/footer%>

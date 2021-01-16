@@ -1,0 +1,16 @@
+<%include partial/header%>
+<h1>Your Orders:</h1>
+
+<% items.forEach(function(item){ %>
+  <div class="">
+    <h6><%=item.PName%></h6>
+    <p>quantity: <%=item.Quantity%></p>
+    <p><%=item.PPRice%></p>
+    <p><%=item.TDate%></p>
+    <p>Status:<%=item.Tstatus%></p>
+    <br>
+    <br>
+  </div>
+<%});%>
+
+<%include partial/footer%>

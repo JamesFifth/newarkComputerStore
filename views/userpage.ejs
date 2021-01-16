@@ -1,0 +1,22 @@
+<%include partial/header%>
+
+<h1>User page</h1>
+<h4>Your Id:</h4>
+<p><%= id%></p>
+
+<h4>Your info:</h4>
+
+<p>fisrt name: <%= info.FName%></p>
+<p>last name: <%= info.LName%></p>
+<p>email: <%= info.Email%></p>
+<p>address: <%= info.Address%></p>
+<p>Phone: <%= info.Phone%></p>
+<p>State: <%= info.States%></p>
+
+<a href="/order">my orders</a>
+<br>
+<a href="/add_card">add card</a>
+<br>
+<a href="/add_shoppingaddr">add shopping adress</a>
+
+<%include partial/footer%>
